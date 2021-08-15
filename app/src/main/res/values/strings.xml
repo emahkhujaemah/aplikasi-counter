@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Aplikasi Counter</string>
+    <string name="action_settings">Settings</string>
+    <string name="pulsa">Stok Pulsa yang tersedia</string>
+    <string name="voucher">Stok Voucher yang tersedia</string>
+    <string name="accessoris">Stok Accessoris yang tersedia</string>
+    <string name="order_ms_pulsa">Anda menjual pulsa</string>
+    <string name="order_ms_voucher">Anda menjual pulsa</string>
+    <string name="order_ms_accessoris">Anda menjual pulsa</string>
+    <string name="action_ms_home">Anda Memilih Home</string>
+    <string name="action_ms_daftar_barang">Anda Memilih Daftar Barang</string>
+    <string name="action_ms_update_barang">Anda Memilih Update Barang</string>
+    <string name="action_ms_laporan">Anda Memilih Laporan</string>
+    <string name="action_ms_setting">Anda Memilih Setting</string>
+</resources>

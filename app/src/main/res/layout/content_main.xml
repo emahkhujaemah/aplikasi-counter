@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/text_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Penjualan Counter!"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_pulsa"
+        android:layout_width="114dp"
+        android:layout_height="84dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/pulsa"
+        android:onClick="btn_pulsa"
+        android:src="@drawable/pulsa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_intro"
+        />
+
+    <ImageView
+        android:id="@+id/img_voucher"
+        android:layout_width="114dp"
+        android:layout_height="84dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/voucher"
+        android:onClick="btn_voucher"
+        android:src="@drawable/voucher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_pulsa"/>
+
+    <ImageView
+        android:id="@+id/img_accessoris"
+        android:layout_width="114dp"
+        android:layout_height="84dp"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/accessoris"
+        android:onClick="btn_accessoris"
+        android:src="@drawable/accessoris"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_voucher"/>
+
+    <TextView
+        android:id="@+id/pulsa_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pulsa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_pulsa"
+        app:layout_constraintTop_toTopOf="@+id/img_pulsa" />
+
+    <TextView
+        android:id="@+id/voucher_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/voucher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_voucher"
+        app:layout_constraintTop_toTopOf="@+id/img_voucher" />
+
+    <TextView
+        android:id="@+id/accesoris_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/accessoris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_accessoris"
+        app:layout_constraintTop_toTopOf="@+id/img_accessoris" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
